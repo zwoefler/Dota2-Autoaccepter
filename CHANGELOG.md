@@ -2,6 +2,18 @@
 
 CHANGELOG for DotA2-Autoaccepter
 
+
+
+## [1.0.1] - 19.09.2024
+
+Add F11 toggle to activate/deactivate DotA2-Autoaccepter
+
+### Added
+- F11 toggles the search for the accept button
+- Add console output for toggle function
+
+
+
 ## [1.0.0] - 19.09.2024
 
 Initial Dota2-Autoaccepter 
