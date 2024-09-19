@@ -53,6 +53,15 @@ The templates (pictures of the edges of the accept button) are located in `templ
 python3 -m unittest discover -s tests
 ```
 
+## Build
+```BASH
+source Env/bin/activate
+pip install pyinstaller
+
+pyinstaller --onefile --add-data "templates:templates" --hidden-import=argparse --name=autoaccepter autoaccepter/main.py
+cp dist/autoaccepter
+```
+
 ## License
 
 MIT License - see the [LICENSE](LICENSE) file for details.

@@ -3,6 +3,16 @@
 CHANGELOG for DotA2-Autoaccepter
 
 
+## [1.1.0] - 19.09.2024
+
+Make DotA2-Autoaccepter an executable
+
+### Added
+- Docs how to build
+- Updated gitignore to ignore dist/ build/ and *.spec
+- Implemented way for packaged application to also load tempalte images
+
+
 
 ## [1.0.1] - 19.09.2024
 

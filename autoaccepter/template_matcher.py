@@ -1,7 +1,8 @@
+import sys
+import os
 import cv2
 import numpy as np
 from PIL import ImageGrab
-
 
 def load_templates(template_paths):
     """
@@ -15,7 +16,13 @@ def load_templates(template_paths):
     """
     templates = []
     for path in template_paths:
-        template = cv2.imread(path, 0)
+        try:
+            # PyInstaller stores files in a temporary _MEIPASS folder
+            base_path = sys._MEIPASS
+        except AttributeError:
+            base_path = os.path.abspath(".")
+        template_path = os.path.join(base_path, path)
+        template = cv2.imread(template_path, 0)
         template_w, template_h = template.shape[::-1]
         templates.append((template, template_w, template_h))
     return templates
