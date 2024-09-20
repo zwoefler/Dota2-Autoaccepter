@@ -2,6 +2,11 @@
 
 CHANGELOG for DotA2-Autoaccepter
 
+## [1.1.1] - 20.09.2024
+
+Adding Logo to README
+
+
 
 ## [1.1.0] - 19.09.2024
 
