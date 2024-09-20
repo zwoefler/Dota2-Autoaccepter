@@ -1,6 +1,9 @@
-# Dota2 Autoaccepter
+<div align="center" width="100%">
+    <img src="resources/DotA2-Autoaccepter_logo.png" alt="Dota 2 Autoaccepter Logo" width="200">
 
-Accepts your DotA2 games when you refresh yourself between games.
+    <h2>Dota2-Autoaccepter</h2>
+    <p>Accept your DotA2 games when you refresh yourself between games</p>
+</div>
 
 Tested on:
 - Ubuntu 20.04 LTS
