@@ -36,7 +36,6 @@ jobs:
 
       - name: Build with PyInstaller
         run: |
-          source Env/bin/activate
           pyinstaller --onefile --add-data "templates:templates" --hidden-import=argparse --name=$EXPORT_NAME autoaccepter/main.py
 
       - name: Create Executable
