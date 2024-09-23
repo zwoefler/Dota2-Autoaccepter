@@ -2,13 +2,23 @@
 
 CHANGELOG for DotA2-Autoaccepter
 
-## [1.1.1] - 20.09.2024
+
+## [v1.1.2] - 23.09.2024
+
+Add GitHub Action to build and release
+
+### ADDED
+- GitHub Action to build and release DotA2-Autoaccepter
+
+
+
+## [v1.1.1] - 20.09.2024
 
 Adding Logo to README
 
 
 
-## [1.1.0] - 19.09.2024
+## [v1.1.0] - 19.09.2024
 
 Make DotA2-Autoaccepter an executable
 
@@ -19,7 +29,7 @@ Make DotA2-Autoaccepter an executable
 
 
 
-## [1.0.1] - 19.09.2024
+## [v1.0.1] - 19.09.2024
 
 Add F11 toggle to activate/deactivate DotA2-Autoaccepter
 
@@ -29,7 +39,7 @@ Add F11 toggle to activate/deactivate DotA2-Autoaccepter
 
 
 
-## [1.0.0] - 19.09.2024
+## [v1.0.0] - 19.09.2024
 
 Initial Dota2-Autoaccepter 
 
