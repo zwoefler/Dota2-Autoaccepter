@@ -29,6 +29,12 @@ jobs:
           python-version: '3.8'
           cache: 'pip'
 
+      - name: Install Xorg and Wayland libraries
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y libx11-dev libxext-dev libxtst-dev libxkbfile-dev libx11-xcb-dev libwayland-client0 libwayland-cursor0 libwayland-egl1-mesa
+
+
       - name: Install Dependencies 
         run: |
           python -m venv Env
@@ -40,7 +46,12 @@ jobs:
       - name: Build with PyInstaller
         run: |
           source Env/bin/activate
-          pyinstaller --onefile --add-data "templates:templates" --hidden-import=argparse --hidden-import=pynput.keyboard --name=$EXPORT_NAME autoaccepter/main.py
+          pyinstaller --onefile \
+                      --add-data "templates:templates" \
+                      --hidden-import=argparse \
+                      --hidden-import=pynput.keyboard \
+                      --hidden-import=pynput.mouse \
+                      --name=$EXPORT_NAME autoaccepter/main.py
 
       - name: Create Executable
         uses: actions/upload-artifact@v4
