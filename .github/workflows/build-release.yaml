@@ -19,7 +19,7 @@ jobs:
     steps:
       - name: Set environment variables
         run: |
-          echo "EXPORT_NAME=${TAG_NAME#'v'}" >> $GITHUB_ENV
+          echo "EXPORT_NAME=dota2_autoaccepter_${TAG_NAME#'v'}" >> $GITHUB_ENV
       - name: Checkout Code
         uses: actions/checkout@v4
 
@@ -42,14 +42,14 @@ jobs:
       - name: Create Executable
         uses: actions/upload-artifact@v4
         with:
-          name: $EXPORT_NAME
-          path: dist/$EXPORT_NAME
+          name: ${{ env.EXPORT_NAME }}
+          path: dist/${{ env.EXPORT_NAME }}
           retention-days: 1
 
       - name: Release
         uses: softprops/action-gh-release@v2
         with:
-          files: dist/$EXPORT_NAME
+          files: dist/${{ env.EXPORT_NAME }}
           body: |
             ${{ github.event.head_commit.message }}
 

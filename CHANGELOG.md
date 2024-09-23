@@ -2,6 +2,14 @@
 
 CHANGELOG for DotA2-Autoaccepter
 
+## [v1.1.8] - 23.09.2024
+
+Fix GitHub Action CI for v1.1.7
+
+Trying to parse environment varaibles between steps....
+
+
+
 ## [v1.1.7] - 23.09.2024
 
 Fix GitHub Action CI for v1.1.6
