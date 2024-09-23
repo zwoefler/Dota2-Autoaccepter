@@ -6,9 +6,9 @@ on:
       - 'v*'
 
 env:
-  TAG_NAME=${{ github.ref_name }}
-  TARGET_VERSION=${{ env.TAG_NAME#'v' }}
-  EXPORT_NAME=dota2-autoaccepter-${{ env.TARGET_VERSION }}
+  TAG_NAME: ${{ github.ref_name }}
+  TARGET_VERSIONr: ${{ env.TAG_NAME#'v' }}
+  EXPORT_NAMEr: dota2-autoaccepter-${{ env.TARGET_VERSION }}
 
 permissions:
   id-token: write

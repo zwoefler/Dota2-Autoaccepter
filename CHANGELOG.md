@@ -2,6 +2,11 @@
 
 CHANGELOG for DotA2-Autoaccepter
 
+## [v1.1.3] - 23.09.2024
+
+Fix GitHub Action CI for v1.1.2
+
+
 
 ## [v1.1.2] - 23.09.2024
 
