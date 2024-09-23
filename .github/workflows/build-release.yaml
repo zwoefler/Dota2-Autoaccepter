@@ -15,7 +15,7 @@ permissions:
 
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-20.04
     steps:
       - name: Set environment variables
         run: |
@@ -53,3 +53,6 @@ jobs:
           body: |
             ${{ github.event.head_commit.message }}
 
+      - name: Make Executable (Linux)
+        run: chmod +x dist/${{ env.EXPORT_NAME }}
+        if: runner.os == 'Linux'

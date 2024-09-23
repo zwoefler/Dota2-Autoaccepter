@@ -2,6 +2,14 @@
 
 CHANGELOG for DotA2-Autoaccepter
 
+## [v1.1.9] - 23.09.2024
+
+Fix GitHub Action CI for v1.1.8
+
+Using Ubuntu20.04 to avoid GLC-version issues when packaging
+
+
+
 ## [v1.1.8] - 23.09.2024
 
 Fix GitHub Action CI for v1.1.7
