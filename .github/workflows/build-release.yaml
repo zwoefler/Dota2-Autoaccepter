@@ -41,7 +41,7 @@ jobs:
       - name: Create Executable
         uses: actions/upload-artifact@v4
         with:
-          name: dist/$EXPORT_NAME
+          name: $EXPORT_NAME
           path: dist/
           retention-days: 1
 
