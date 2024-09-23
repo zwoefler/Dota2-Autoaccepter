@@ -7,8 +7,8 @@ on:
 
 env:
   TAG_NAME: ${{ github.ref_name }}
-  TARGET_VERSIONr: ${{ env.TAG_NAME#'v' }}
-  EXPORT_NAMEr: dota2-autoaccepter-${{ env.TARGET_VERSION }}
+  TARGET_VERSION: "${TAG_NAME#'v'}"
+  EXPORT_NAME: "dota2-autoaccepter-$TARGET_VERSION"
 
 permissions:
   id-token: write
@@ -37,19 +37,19 @@ jobs:
       - name: Build with PyInstaller
         run: |
           source Env/bin/activate
-          pyinstaller --onefile --add-data "templates:templates" --hidden-import=argparse --name=${{ env.EXPORT_NAME }} autoaccepter/main.py
+          pyinstaller --onefile --add-data "templates:templates" --hidden-import=argparse --name=$EXPORT_NAME autoaccepter/main.py
 
       - name: Create Executable
         uses: actions/upload-artifact@v4
         with:
-          name: dist/${{ env.EXPORT_NAME }}
+          name: dist/$EXPORT_NAME
           path: dist/
           retention-days: 1
 
       - name: Release
         uses: softprops/action-gh-release@v2
         with:
-          files: dist/${{ env.EXPORT_NAME }}
+          files: dist/$EXPORT_NAME
           body: |
             ${{ github.event.head_commit.message }}
 
