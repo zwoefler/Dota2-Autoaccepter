@@ -2,6 +2,14 @@
 
 CHANGELOG for DotA2-Autoaccepter
 
+## [v1.1.11] - 23.09.2024
+
+Fix GitHub Action CI for v1.1.10
+
+Activating Environment in Pipeline buildstep
+
+
+
 ## [v1.1.10] - 23.09.2024
 
 Fix GitHub Action CI for v1.1.9
