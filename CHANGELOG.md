@@ -2,6 +2,14 @@
 
 CHANGELOG for DotA2-Autoaccepter
 
+## [v1.1.13] - 23.09.2024
+
+Fix GitHub Action CI for v1.1.12
+
+Adding xorg keyboard dependency to project build
+
+
+
 ## [v1.1.12] - 23.09.2024
 
 Fix GitHub Action CI for v1.1.11
