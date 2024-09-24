@@ -2,6 +2,12 @@
 
 CHANGELOG for DotA2-Autoaccepter
 
+## [v1.2.0] - 24.09.2024
+
+Is active and inactive message only appears after pressing F11
+
+
+
 ## [v1.1.13] - 23.09.2024
 
 Fix GitHub Action CI for v1.1.12
