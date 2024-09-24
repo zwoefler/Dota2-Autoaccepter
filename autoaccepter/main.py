@@ -45,8 +45,8 @@ def toggle_autoaccept(key=None):
     global is_active
     if key == keyboard.Key.f11:
         is_active = not is_active
-    status = "active" if is_active else "paused"
-    print(f"DotA2-Autoaccepter is {status} (Press F11 to toggle)")
+        status = "active" if is_active else "paused"
+        print(f"DotA2-Autoaccepter is {status} (Press F11 to toggle)")
 
 
 template_paths = [
