@@ -11,14 +11,12 @@ Tested on:
 ## How to use
 1. Install Dota2-Autoaccepter
 2. In DotA enable "Bring Dota 2 to front when match found" setting (Options > Advanced Options)
-3. Start the Autoaccepter
+3. Start the Autoaccepter: `./dota2_autoaccepter`
 
 ## Features
 - [X] Automatically accept a game when one is found.
-- [ ] Requeue if the queue misses.
 - [ ] Click "READY" during party ready check.
 - [ ] Cross-platform: Works on Windows too
-- [ ] Automatically tab into Dota 2 and click "Accept" or "READY" when a game is found.
 
 ## How it works?
 The script takes a screenshot every 3 seconds.
